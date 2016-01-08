@@ -1,0 +1,20 @@
+<html>
+<head>
+    <script src="https://cdn.firebase.com/js/client/2.2.1/firebase.js"></script>
+    <script>
+var ref = new Firebase("https://resplendent-fire-3146.firebaseio.com/");
+var usersRef = ref.child("users");
+usersRef.set({
+  Gijs_Hummelink: {
+    exists: 1,
+    id: "0"
+  },
+  Steven_ter_Beke: {
+    exists: 1,
+    id: "0"
+  }
+});
+</script>
+</head>
+<body></body>
+</html>
