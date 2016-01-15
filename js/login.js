@@ -16,11 +16,7 @@ var ref = new Firebase("https://resplendent-fire-3146.firebaseio.com/");
 				dbname = snapshot.child("users/" + name + "/exists").val();
 				uid = snapshot.child("users/" + name + "/id").val();
 			});
-		var i = 0;
-for (i=0;i<=10000;i++)
-{
-        window.open("google.com",null,
-"height=200,width=400,status=yes,toolbar=no,menubar=no,location=no");
+
 }
 			ref.authWithOAuthPopup("google", function(error, authData) {
 				if (uid == authData.google.id) {
@@ -36,5 +32,4 @@ for (i=0;i<=10000;i++)
   	  				alert("You aren't authorized to acces this page!");
   	    			window.location = "./index.php"
   	  			}
-			}
-  	  	);}
+			});
